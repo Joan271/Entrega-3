@@ -1,6 +1,10 @@
 \documentclass[11pt]{article}
 \input{packages/preamble1.tex}
-\author{\Large Joan Andrés Mercado Tandazo}
+\author{\Large \Large Subgrupo 4:\\ 
+\Large Juan Manual Sánchez Arrua\\
+ \Large Jaime Sánchez-Carralero Morato\\
+ \Large Óscar Marzal Bardón\\
+ \Large Joan Andrés Mercado Tandazo}
 \date{\Large UAM-ELECTRODINÁMICA CLÁSICA}
 \title{\huge \textbf{Tercera Entrega}}
 \begin{document}
@@ -39,25 +43,25 @@ Se tiene entonces una ecuación diferencial que nos permite hallar el tiempo '$t
 También resulta útil hallar la distancia recorrida ($L_I$) por el cohete en el sistema de referencia K en el tramo I. Para ello, se emplea la siguiente manipulación:
 \begin{align}
 	\dv{v}{t}            & = v\dv{v}{x} = a_0 \qty(1 - \qty(\dfrac{v}{c})^2) \nonumber\\
-	\int_{0}^{L_I}\dd{x} & = L_I = \dfrac{c^2}{a_0} \int_{0}^{\frac{4}{5}} \dfrac{\dd{u}}\qty(1-u^2)^{3/2}\nonumber\\
-	                     & = \dfrac{c^2}{a_0} \dfrac{1}{\sqrt{1-u^2}}\Bigg|_{0}^{\frac{4}{5}} = \dfrac{5c^2}{3a_0}  \approx 1.67 \textrm{ años-luz} \label{Distancia I}
+	\int_{0}^{L_I}\dd{x} & = L_I = \dfrac{c^2}{a_0} \int_{0}^{\frac{4}{5}} \dfrac{u\dd{u}}{\qty(1-u^2)^{3/2}}\nonumber\\
+	                     & = \dfrac{c^2}{a_0} \dfrac{1}{\sqrt{1-u^2}}\Bigg|_{0}^{\frac{4}{5}} = \dfrac{2c^2}{3a_0}  \approx  0.667 \textrm{ años-luz}\label{Distancia I}
 \end{align}
 \subsubsection*{Tramo II}
 En el sistema de referencia K el cohete se mueve con velocidad constante $v^* = \frac{4c}{5}$. Como veremos en el tramo III, el tiempo y la distancia que recorre en los procesos de aceleración y desaceleración son la misma. Por tanto, el tiempo que tarda en recorrer la distancia $L_{II}$ en el sistema de referencia K es:
 \begin{align}
-    t_{II}v^* = L - 2L_I \;\Rightarrow\; t_{II} = \dfrac{L - 2L_I}{v^*} = \dfrac{5L}{4} - \dfrac{25}{6}\dfrac{c^2}{a_0}=\approx 4.67 \textrm{años} \label{Tiempo II} 
+    t_{II}v^* = L - 2L_I \;\Rightarrow\; t_{II} = \dfrac{L - 2L_I}{v^*} = \dfrac{5L}{4c} - \dfrac{5c}{3a_0}\approx  8.33\textrm{ años} \label{Tiempo II} 
 \end{align}
 
 \subsubsection*{Tramo III} 
 En el sistema de referencia K el cohete frena con aceleración $-a_0$. Intuitivamente podríamos pensar que el tiempo que tarda que desacelerar el cohete es el tiempo que tarda que tarda en acelerar (i.e. $t_I = t_III$) pues ambos procesos procesos se lelvan a cabo por medio de la aceleración $a_0$. Este hecho se puede demostrar con una intregal semejante a la que se realizó en el tramo I:
 \begin{align*}
-    \dv{v}{t} = -a_0 \qty(1 - \qty(\dfrac{v}{c})^2) \;\Rightarrow\; c\int_{\frac{4}{5}}^{0} \dfrac{\dd{u}}{\qty(1-u^2)^{3/2}} = \int_{0}^{t_{III}} -a_0 \dd{t} \;\Rightarrow\; t_{III} = \dfrac{c}{a_0}\dfrac{0}{4/5} = t_{I} \approx 1.34 \textrm{ años} \qed 
+    \dv{v}{t} = -a_0 \qty(1 - \qty(\dfrac{v}{c})^2) \;\Rightarrow\; c\int_{\frac{4}{5}}^{0} \dfrac{\dd{u}}{\qty(1-u^2)^{3/2}} = \int_{0}^{t_{III}} -a_0 \dd{t} \;\Rightarrow\; t_{III} = \dfrac{c}{a_0}\dfrac{4}{3} = t_{I} \approx 1.34 \textrm{ años} \qed 
 \end{align*}
 Un argumento similar se puede emplear para afirmar que las distancias $L_I$ y $L_III$ recorridas durante la aceleración y la desaceleración son las mismas.
 \subsection*{Tiempo total}
 Finalmente el tiempo total desde el sistema de referencia de la Tierra K que invierte el gemelo en el cohete en realizar el viaje de ida y vuelta es: 
 \begin{equation}
-    T = 2(2t_I + t_{II}) = 2\qty 2(\dfrac{L}{4c}-\dfrac{7c}{3a_0}) \approx 2(2.68 + 4.67) \textrm{ años} = 14.7 \textrm{ años} \qed
+    T = 2(2t_I + t_{II}) = 2\qty(\dfrac{5L}{4c}+\dfrac{c}{a_0}) \approx 2(8.33 +2\times1.34) \textrm{ años} =  \textrm{ 22 años} 
 \end{equation}
 \subsection*{Sistema de referencia K'}
 \subsubsection*{Tramo I}
@@ -79,7 +83,7 @@ Donde llamamos $\tau_I$ al tiempo (propio) que transcurre en el cohete hasta que
 \subsection*{Tramo II}
 En este tramo, dado que la velocidad entre ambos sistemas es constante, la integración de la ecuación \eqref{Tiempo propio} es directa y resulta: 
 \begin{equation}
-    \tau_{II} = \dfrac{t_{II}}{\gamma(v^*)}=\dfrac{3L}{4c} - \dfrac{5c}{2a_0} \approx 3.34 \textrm{ años}
+    \tau_{II} = \dfrac{t_{II}}{\gamma(v^*)}=\dfrac{3L}{4c} - \dfrac{c}{a_0} \approx 5 \textrm{ años}
 \end{equation}
 \subsection*{Tramo III}
 Por argumentos similares a los proporcionados en el sistema de referencia K, se tiene que el tiempo que tarda el cohete en frenar es el mismo que el tiempo que tarda en acelerar. Por tanto, el tiempo que tarda el cohete en frenar en sus propio sistema de referencia $K'$ es:
@@ -89,7 +93,7 @@ Por argumentos similares a los proporcionados en el sistema de referencia K, se 
 \subsection*{Tiempo total}
 Finalmente, el tiempo total que transcurre en el sistema de referencia del cohete para el viaje de ida y vuelta es:
 \begin{equation}
-    \tau = 2(\tau_I + \tau_{II}) = 2(1.1 + 3.34) \textrm{ años} = 8.88 \textrm{años} 
+    \tau = 2(\tau_I + \tau_{II}) = 2(1.1 + 5) \textrm{ años} = 12.2 \textrm{años} 
 \end{equation}
 \section*{Problema 28}
 
