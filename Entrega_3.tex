@@ -61,7 +61,7 @@ Un argumento similar se puede emplear para afirmar que las distancias $L_I$ y $L
 \subsection*{Tiempo total}
 Finalmente el tiempo total desde el sistema de referencia de la Tierra K que invierte el gemelo en el cohete en realizar el viaje de ida y vuelta es: 
 \begin{equation}
-    T = 2(2t_I + t_{II}) = 2\qty(\dfrac{5L}{4c}+\dfrac{c}{a_0}) \approx 2(8.33 +2\times1.34) \textrm{ años} =  \textrm{ 22 años} 
+    T = 2(2t_I + t_{II}) = 2\qty(\dfrac{5L}{4c}+\dfrac{c}{a_0}) \approx 2(8.33 +2\times1.34) \textrm{ años} =  \fbox{\textrm{22 años}} 
 \end{equation}
 \subsection*{Sistema de referencia K'}
 \subsubsection*{Tramo I}
@@ -93,8 +93,18 @@ Por argumentos similares a los proporcionados en el sistema de referencia K, se 
 \subsection*{Tiempo total}
 Finalmente, el tiempo total que transcurre en el sistema de referencia del cohete para el viaje de ida y vuelta es:
 \begin{equation}
-    T' = 2(\tau_I + \tau_{II}) = 2(1.1 + 5) \textrm{ años} = 12.2 \textrm{ años} 
+    T' = 2(\tau_I + \tau_{II}) \approx 2(1.1 + 5) \textrm{ años} = \fbox{12.2 \textrm{ años}} 
 \end{equation}
 \section*{Problema 28}
-
+Calcular el valor de la constante k de forma que el tensor de rango 2,
+ $H_{\mu\nu} =x_\mu x_\nu +k\eta_{\mu\nu}x^2$, con $x^2 \equiv x_\rho x^\rho$, satisfaga $\partial_\mu H^{\mu\nu} = 0$
+ \vspace*{1em}
+ \hrule
+ \vspace*{1em}
+ {\color{blue} Resolución:}\\
+ \begin{gather}
+    \partial_\mu H^{\mu\nu} = 0 \;\Rightarrow\; \partial_\mu (x^\mu x^\nu + k\eta^{\mu\nu}x^\rho x_\rho) = 0 \;\therefore\;\nonumber\\
+    \;\therefore\; x^\nu + x^\mu\delta_\mu^\nu + k\qty(\eta^{\mu\nu})\qty(\delta_\mu^\rho x_\rho + \delta_{\mu\rho}x^\rho) = 2x^\nu + 2kx^\nu = 0 \;\therefore\;\nonumber\\
+    \;\therefore\;  \fbox{k = -1}
+ \end{gather}
 \end{document}
